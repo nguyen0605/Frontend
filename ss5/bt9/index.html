@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container{
+            line-height: 1.6;
+            background-color: rgb(245, 244, 244);
+            width: fit-content;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            padding: 15px;
+        }
+        .input-group {
+            display: flex;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden; 
+            background-color: white;
+            width: 360px;
+        }
+
+        .input-group span {
+            background-color: #f1f1f1;
+            padding: 5px 7px;
+            border-right: 1px solid #ccc;
+            color: gray;
+            font-size: 10px;
+        }
+
+        .input-group input {
+            border: none;
+            padding: 3px;
+        }
+        .optional{
+            color: gray;
+        }
+        .checkbox-container{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 10px;
+        }
+        .payment-options{
+            display: flex;
+            gap: 5px;
+            align-items: center;
+        }
+        [type="text"],
+        [type="email"],
+        [type="email"]{
+            border-radius: 5px;
+            border-color: #f1f1f1;
+        }
+        [type="button"]{
+            border-radius: 5px;
+            color: white;
+            background-color: rgb(55, 127, 223);
+            border-color: rgb(55, 127, 223);
+            width: 360px;
+            height: 40px;
+            font-size: 16px;
+            margin-top: 12px;
+        }
+        select{
+            border-radius: 5px;
+            border-color: #f1f1f1;
+        }
+        hr {
+            border: none;
+            border-top: 2px solid #cecccc; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Billing address</h2>
+        <form action="">
+            <table>
+                <tr>
+                    <td><label>First name<br><input type="text" style="margin-right: 15px;"></label></td>
+                    <td><label>Last name<br><input type="text"></label></td>
+                </tr>
+            </table>
+            <label for="username">Username</label><br>
+            <div class="input-group">
+                <span>@</span>
+                <input id="username" type="text" placeholder="Username">
+            </div>
+            <label>Email <span class="optional">(Optional)</span><br><input type="email" style="width: 355px;" placeholder="you@example.com"></label><br>
+            <label>Address<br><input type="text" placeholder="1234 Main St" style="width: 355px ;"></label><br>
+            <label>Address 2 <span class="optional">(Optional)</span><br><input type="text" placeholder="Apartment or suite" style="width: 355px;"></label>
+            <table>
+                <tr>
+                    <td><label>Country<br><select name="country" style="width: 140px;">
+                        <option>Choose...</option>
+                        <option value="Vietnam">Vietnam</option>
+                        <option value="Chinese">Chinese</option>
+                        <option value="England">England</option>
+                        <option value="Japan">Japan</option>
+                    </select></label></td>
+                    <td><label>State<br></label><select name="state" style="width: 110px;">
+                        <option>Choose...</option>
+                    </select></td>
+                    <td><label>Zip<br><input type="text" style="width: 95px;"></label></td>
+                </tr>
+            </table><hr>
+            <div class="checkbox-container">
+                <input type="checkbox" id="same-address"/>
+                <label for="same-address">Shipping address is the same as my billing address</label>
+            </div>
+            <div class="checkbox-container">
+                <input type="checkbox" id="save"/>
+                <label for="save">Save this information for next time</label>
+            </div> <hr>
+            <h2>Payment</h2>
+            <div class="payment-options">
+                <input type="radio" checked id="credit-card"/>
+                <label for="credit-card">Credit card</label>
+            </div>
+            <div>
+                <input type="radio" id="debit-card"/>
+                <label for="debit-card">Debit card</label>
+            </div>
+            <div>
+                <input type="radio" id="PayPal"/>
+                <label for="PayPal">PayPal</label>
+            </div>
+
+            <table>
+                <tr>
+                    <td><label>Name of card<br><input type="text" style="margin-right: 15px;"/></label></td>
+                    <td><label>Credit card number<br> <input type="number"></label></td>
+                </tr>
+            </table>
+            <span class="optional" style="font-size: 10px;">Full name as displayed on card</span>
+            <table>
+                <tr>
+                    <td><label>Expiration<br><input type="text" style="width: 100px; margin-right: 15px;"/></label></td>
+                    <td><label>CVV<br><input type="text" style="width: 100px;"></label></td>
+                </tr>
+            </table> <hr>
+            <input type="button" value="Continue to checkout"/>
+        </form>
+    </div>
+</body>
+</html>

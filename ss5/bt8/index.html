@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .post-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px 20px;
+            padding-top: 10px;
+        }
+        .post-item:nth-child(odd) {  
+            border-right: 2px solid #ccc;
+            padding-right: 100px;  
+        }
+        .post-item {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        .post-item img {
+            width: 100px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .post-content {
+            flex: 1;
+        }
+        .post-date {
+            font-size: 12px;
+            color: gray;
+        }
+        .post-title {
+            font-size: 14px;
+            font-weight: bold;
+            color: #1a1a1a;
+            text-decoration: none;
+            display: block;
+            margin-top: 3px;
+        }
+        .post-title:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>BÀI VIẾT CÙNG CHỦ ĐỀ</h1><hr style="border: 2px dashed; color: rgb(128, 126, 124); margin-top: -10px;">
+    <div class="post-list">
+            
+        <div class="post-item">
+            <img src="https://rikkei.edu.vn/wp-content/uploads/2024/01/giao-huu-bong-da-ptit-fulltime-rikkei-academy.jpg" alt="Bài viết 1">
+            <div class="post-content">
+                <div class="post-date">28/12/2023 • 04 phút đọc</div>
+                <a href="#" class="post-title">[HCM] Trận Giao Hữu Bóng Đá Giữa PTIT & Lớp Fulltime</a>
+            </div>
+        </div>
+
+        <div class="post-item">
+            <img src="https://rikkei.edu.vn/wp-content/uploads/2023/07/rikkei-academy-4.jpg" alt="Bài viết 4">
+            <div class="post-content">
+                <div class="post-date">26/07/2023 • 04 phút đọc</div>
+                <a href="#" class="post-title">Workshop "Giải Pháp Tự động hóa Quản trị Nhân Sự – Kinh nghiệm xây dựng và triển khai...</a>
+            </div>
+        </div>
+
+        <div class="post-item">
+            <img src="https://rikkei.edu.vn/wp-content/uploads/2024/01/workshop-Data-Analysis-Rikkei-Academy.jpg" alt="Bài viết 2">
+            <div class="post-content">
+                <div class="post-date">10/01/2024 • 04 phút đọc</div>
+                <a href="#" class="post-title">Workshop: Bức Tranh Nhân Sự Ngành Data Analysis 2024</a>
+            </div>
+        </div>
+
+        <div class="post-item">
+            <img src="https://rikkei.edu.vn/wp-content/uploads/2023/07/rikkei-academy-da-nang_3.jpg" alt="Bài viết 5">
+            <div class="post-content">
+                <div class="post-date">09/07/2023 • 04 phút đọc</div>
+                <a href="#" class="post-title">[04/07/2023] Rikkei Academy Đà Nẵng chào đón những vị khách “đặc biệt”</a>
+            </div>
+        </div>
+
+        <div class="post-item">
+            <img src="https://rikkei.edu.vn/wp-content/uploads/2022/12/khoa-hoc-lap-trinh-web-tu-co-ban-den-nang-cao.jpg" alt="Bài viết 3">
+            <div class="post-content">
+                <div class="post-date">17/05/2023 • 04 phút đọc</div>
+                <a href="#" class="post-title">Khóa Học Lập Trình Từ Cơ Bản Đến Nâng Cao – Rikkei Academy</a>
+            </div>
+        </div>
+
+        <div class="post-item">
+            <img src="https://rikkei.edu.vn/wp-content/uploads/2022/07/khai-giang-khoa-dao-tao-lap-trinh-thang-6.jpg" alt="Bài viết 6">
+            <div class="post-content">
+                <div class="post-date">15/07/2022 • 04 phút đọc</div>
+                <a href="#" class="post-title">RIKKEI ACADEMY KHAI GIẢNG CHƯƠNG TRÌNH ĐÀO TẠO LẬP TRÌNH VIÊN FULL STAC...</a>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
