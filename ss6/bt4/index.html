@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: Arial, sans-serif;
+        }
+        .header{
+            background-color: rgb(5, 179, 5);
+            display: flex;
+            justify-content: center;
+            height: 60px;
+            color: white;
+            gap: 15px;
+        }
+        .header span{
+            margin-top: 15px;
+            color: blue;
+        }
+        .main{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+        }
+        .mainA{
+            background-color: rgb(219, 218, 218);
+            padding-top: 30px;
+            padding-left: 7px;
+            padding-right: 250px;
+            padding-bottom: 350px;
+        }
+        .mainA h2{
+            white-space: nowrap;
+        }
+        .mainB{
+            flex: 1;
+        }
+        .mainB img{
+            height: 140px;
+            width: 300px;
+            object-fit: cover;
+        }
+        hr{
+            width: 100vw;
+        }
+        .fooster{
+            background-color: rgb(71, 70, 70);
+            text-align: center;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>My blog</h1>
+    </div>
+    <div class="header">
+        <span><a href="#">Home</a></span>
+        <span><a href="#">Categories</a></span>
+        <span><a href="#">About</a></span>
+    </div>
+    <div class="main">
+        <div class="mainA">
+            <h2>Chuyên mục</h2>
+            <ul>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JavaScript</a></li>
+                <li><a href="#">HTML</a></li>
+            </ul>
+        </div>
+        <div class="mainB">
+            <h2>Bài viết 1</h2>
+            <img src="https://tutorialcrawler.com/wp-content/uploads/2021/01/%E4%B9%B1%E6%95%B0%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8BJav-305x207.jpg"/>
+            <p>Đây là nội dung tóm tắt của bài viết 1.</p>
+            <hr>
+            <h2>Bài viết 2</h2>
+            <img src="https://cdn-images-1.medium.com/v2/resize:fit:800/1*ypU_4erZ0E2b2PDQg9P4Zw.jpeg"/>
+            <p>Đây là nội dung tóm tắt của bài viết 2.</p>
+            <hr>
+        </div>
+    </div>
+    
+    <div class="fooster">
+        Liên hệ: email.@example.com
+    </div>
+</body>
+</html>

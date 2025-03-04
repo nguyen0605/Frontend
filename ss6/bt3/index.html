@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: Arial, sans-serif;
+        }
+        .header{
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px;
+        }
+        .header1{
+            margin-left: -20px;
+            font-weight: bold;
+            
+        }
+        .header2{
+            margin-right: -20px;
+            font-weight: bold;
+            font-size: 11px;
+        }
+        .header2 span{
+            margin-right: 10px;
+        }
+        .introduce{
+            background-color: rgb(200, 196, 196);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+            padding: 30px;
+            font-weight: bold;
+        }
+        .introduce img{
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #010e1b;
+        }
+        .projects{
+            padding: 10px;
+            font-weight: bold;
+        }
+        .projects-list{
+            display: flex;
+            justify-content: center; 
+            gap: 10px; 
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+        .projects span{
+            background-color: black;
+            color: white;
+            font-size: 10px;
+            line-height: 40px;
+            display: inline-block;
+            width: 130px;
+            margin-top: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .fooster{
+            background-color: rgb(200, 196, 196);
+            padding: 3px;
+            font-size: 10px;
+            text-align: center;
+        }
+        .fooster a{
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header1">
+            Portfolio của TSUBASA
+        </div>
+        <div class="header2">
+            <span>Home</span>
+            <span>Projects</span>
+            <span>Contact</span>
+        </div>
+    </div>
+    <div class="introduce">
+        <img src="/ss6/bt3/picture 1.png"/>
+        <p>Xin chào! Tôi là TSUBASA, một nhà phát triển web sáng tạo.</p>
+    </div>
+    <div class="projects">
+        <p>Dự án của tôi</p>
+        <div class="projects-list">
+            <span>Dự án 1</span>
+            <span>Dự án 2</span>
+            <span>Dự án 3</span>
+            <span>Dự án 4</span>
+        </div>
+    </div>
+    <div class="fooster">
+        <p>Kết nối với tôi trên <a href="https://www.linkedin.com/">LinkedIn</a> | <a href="https://github.com/">Github</a></p>
+    </div>
+</body>
+</html>
