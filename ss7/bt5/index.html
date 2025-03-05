@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/7b988689d5.js" crossorigin="anonymous"></script>
+    <style>
+        .main{
+           font-family: 'Roboto', sans-serif;
+           border-radius: 10px; 
+           border: 1px solid rgba(181, 179, 192, 0.6); 
+           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+           width: 350px;
+           height: 550px;
+           background-color: white;
+           text-align: center;
+           font-size: 18px;
+        }
+        .title{
+            background-color: rgb(218, 21, 21);
+            color: white;
+            height: 60px;
+            font-weight: bold;
+            font-size: 22px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .title img{
+            position: fixed;
+            top: -8px;
+            left: 300px;
+        }
+        .content{
+            border-bottom: 2px solid rgb(189, 186, 186);
+            width: 300px;
+            padding: 10px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .content span{
+            color: rgb(247, 149, 2);
+        }
+        .button1{
+            display: inline-block;
+            width: 280px;
+            background-color: rgb(207, 4, 4);
+            color: white;
+            padding: 18px;
+            border-radius: 40px;
+        }
+        .button2{ 
+            display: inline-block;
+            background-color: white;
+            border-radius: 40px;
+            border: 2px solid red;
+            color: rgb(200, 6, 6);
+            padding: 10px;
+            width: 100px;
+            font-weight: bold;
+        }
+        span {
+            transition: all 0.3s ease-in-out;
+            cursor: pointer; 
+        }    
+        span:hover { 
+            font-weight: bold; 
+            text-decoration: underline; 
+            transform: scale(1.1); 
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="title">
+            <img src="https://goicuoc5gviettel.net/public/images/icon_giamgia.png" alt="picture">
+            5G160B
+        </div>
+
+        <div class="content">
+            Data: <span>120Gb (4Gb/ ngày)</span>
+        </div>
+
+        <div class="content">
+            Giá: <span>160.000đ</span>
+        </div>
+        <div class="content">Nội mạng: <span> <10 phút ( tối đa 1000 phút/ 30 ngày )</span></div>
+        <div class="content">Ngoại mạng: <span>100 phút</span></div>
+        <div class="content">Free data: <span>TV360 Basic, 20Gb lưu trữ Mybox</span></div>
+        <div class="content">Thời hạn: <span>30 ngày</span></div>
+        <p>(Sử dụng 4Gb/ ngày)</p>
+        <span class="button1"><i class="fa-regular fa-pen-to-square"></i> ĐĂNG KÝ</span><br><br>    
+        <span class="button2"><i class="fa-regular fa-share-from-square"></i> Chi tiết</span>
+    </div>
+</body>
+</html>

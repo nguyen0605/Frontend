@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/7b988689d5.js" crossorigin="anonymous"></script>
+    <style>
+        .container{
+            border: 2px solid rgb(189, 188, 188);
+            border-radius: 5px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            width: 730px;
+        }
+        .category{
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+            align-items: center;
+            padding: 14px;
+            box-sizing: border-box;
+            transition: background-color 1s;
+            border-bottom: 1px solid rgb(189, 188, 188);
+            position: relative;
+        }
+        .category:hover {
+            background-color: rgb(96, 171, 218);
+        }
+        .arrow{
+            transition: transform 0.3s ease;
+        }
+        .category:hover .arrow i {
+            transform: rotate(180deg);
+            color: white;
+        }
+        .content {
+            display: none;
+            padding: 10px;
+            border-bottom: 1px solid rgb(189, 188, 188);
+        }
+        .category:hover + .content{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="category">
+            <span>Accordion Item #1</span>
+            <span class="arrow"><i class="fa-solid fa-chevron-down"></i></span>
+        </div> 
+        <div class="category">
+            <span>Accordion Item #2</span>
+            <span class="arrow"><i class="fa-solid fa-chevron-down"></i></span>
+        </div>
+        <div class="content">
+            <p><b>This is the second item's accordion body.</b> It is hidden by default, until the collapse plugin adds<br> the appropriate classes that we use to style each element. These classes control the overall<br> appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with<br> custom CSS or overriding our default variables. It's also worth noting that just about any HTML<br> can go within the <code style="color: rgb(185, 16, 106);">.accordion-body</code>, though the transition does limit overflow.</p>
+        </div>
+        <div class="category">
+            <span>Accordion Item #3</span>
+            <span class="arrow"><i class="fa-solid fa-chevron-down"></i></span>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Card</title>
+    <script src="https://kit.fontawesome.com/7b988689d5.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 350px;
+        }
+        .title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .status {
+            display: inline-block;
+            background: #fdead8;
+            color: rgb(184, 26, 26);
+            height: 10px;
+            width: 60px;
+            font-size: 10px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-top: 5px;
+            border: 1px solid #fe8001;
+            text-align: center;
+        }
+        .info {
+            margin-top: 15px;
+            font-size: 14px;
+    
+        }
+        .progress-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .progress-bar {
+            flex: 1;
+            height: 6px;
+            background: #f0e0c2;
+            border-radius: 5px;
+            position: relative;
+            margin-left: 10px;
+        }
+        
+        .progress {
+            height: 100%;
+            width: 76%;
+            background: #f78b00;
+            border-radius: 5px;
+        }
+        .meta {
+            font-size: 12px;
+            margin-top: 10px;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+        }
+        .avatars img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-right: -5px;
+            border: 2px solid white;
+        }
+        .tasks {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="title">Water resistant mosquito...</div>
+        <div class="status">INACTIVE</div>
+        <div class="info"><i class="fa-solid fa-user"></i> Client: <a href="#" style="text-decoration: none;">Monsters.Inc</a></div>
+        <div class="info"><i class="fa-solid fa-wallet"></i> Budget: <strong>10,500$</strong></div>
+        <div class="progress-container">
+            <div>Progress</div>
+            <div>76%</div>
+        </div>
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+        
+        <div class="meta"><b>Started:</b> 8th Mar. 2021</div>
+        <div class="meta"><b>Deadline:</b> 15th Sept. 2022</div>
+        <div class="footer">
+            <div class="avatars">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg">
+                <img src="https://randomuser.me/api/portraits/men/46.jpg">
+            </div>
+            <div class="tasks"><i class="fa-solid fa-list-check"></i> 125 Task</div>
+        </div>
+    </div>
+</body>
+</html>
