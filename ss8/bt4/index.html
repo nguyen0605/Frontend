@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/...">
+    <script src="https://kit.fontawesome.com/7b988689d5.js" crossorigin="anonymous"></script>
+    <style>
+        .container{
+            position: fixed;
+            font-family: 'Playfair Display', serif;
+            height: 500px;
+            width: 500px;
+        }
+
+        .header h2 {
+            display: inline-block;
+            font-size: 24px;
+            font-weight: bold;
+            position: relative; 
+            padding-bottom: 10px; 
+        }
+
+        .header h2::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 110%; 
+            height: 2px; 
+            background-color: rgb(228, 106, 106);
+        }
+        .post-list{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px 20px;
+        }   
+        .post-item{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        .post-diamond{
+            width: 80px;
+            height: 80px;
+            transform: rotate(45deg);
+            border: 2px solid rgb(183, 181, 181);
+            margin-left: 19px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(247, 61, 61);
+
+        }
+        .post-content{
+            width: 250px;
+        }
+        p{
+            color: rgb(184, 183, 183);
+        }
+        i{
+            font-size: 40px;
+            transform: rotate(-45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Erat lacinia</h2>
+        </div>
+        <div class="post-list">
+            <div class="post-item">
+                <div class="post-diamond"><i class="fa-regular fa-gem"></i></div>
+                <div class="post-content">
+                    <h3>Portitor ullamcorper</h3>
+                    <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                </div>
+            </div>
+
+            <div class="post-item">
+                <div class="post-diamond"><i class="fa-solid fa-thumbs-up"></i></div>
+                <div class="post-content">
+                    <h3>Sapien veroeros</h3>
+                    <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                </div>
+            </div>
+
+            <div class="post-item">
+                <div class="post-diamond"><i class="fa-solid fa-rocket"></i></div>
+                <div class="post-content">
+                    <h3>Quam lorem ipsum</h3>
+                    <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                </div>
+            </div>
+
+            <div class="post-item">
+                <div class="post-diamond"><i class="fa-regular fa-envelope"></i></div>
+                <div class="post-content">
+                    <h3>Sed magna finibus</h3>
+                    <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+                </div>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>
