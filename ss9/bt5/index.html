@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: inline-block;
+        }
+        .content{
+            display: flex;
+            gap: 10px;
+        }
+        .content:nth-child(even){
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .number{
+            background-color: #800080;
+            color: white;
+            width: 140px;
+            height: 60px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="number">1</div>
+            <div class="number">2</div>
+            <div class="number">3</div>
+            <div class="number">4</div>
+            <div class="number">5</div>
+            <div class="number">6</div>
+        </div>
+        <div class="content">
+            <div class="number">7</div>
+            <div class="number">8</div>
+        </div>
+    </div>
+</body>
+</html>

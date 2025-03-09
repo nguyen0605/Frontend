@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            gap: 10px;
+        }
+        .column{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .big{
+            background-color: #2C3E50;
+            color: white;
+            height: 90px;
+            width: 280px;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+        .small{
+            background-color: #2C3E50;
+            color: white;
+            height: 50px;
+            width: 140px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="column">
+            <div class="big">Big</div>
+            <div class="big">Big</div>
+        </div>
+
+        <div class="column">
+            <div class="small">Small 1</div>
+            <div class="small">Small 3</div>
+            <div class="small">Small 5</div>
+            <div class="small">Small 7</div>
+        </div>
+
+        <div class="column">
+            <div class="small">Small 2</div>
+            <div class="small">Small 4</div>
+            <div class="small">Small 6</div>
+            <div class="small">Small 8</div>
+        </div>
+    </div>
+</body>
+</html>
