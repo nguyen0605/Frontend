@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/7b988689d5.js" crossorigin="anonymous"></script>
+    <style>
+        .container{
+            height: 60%;
+            width: 80%;
+            display: flex;
+            gap: 60px;
+        }
+        .container-pic{
+            width: 380px;
+            height: 400px;
+            position: relative;
+            display: flex;
+        }
+        .small-pic{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .big-pic{
+            width: 300px;
+            height: 400px;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .big-pic img, .small-pic img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .content{
+            width: 10%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            font-family: 'Poppins', sans-serif;
+            white-space: nowrap;
+            gap: 15px;
+        }
+        .content-title{
+            font-weight: bold;
+            font-size: 30px;
+        }
+        .review{
+            height: 30px;
+            display: flex;
+            align-items: center;
+        }
+        .separator{
+            color: #7e7676;
+            font-size: 25px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .review i{
+            color: #FFC700;
+            margin-right: 7px;
+            margin-top: 5px;
+        }
+        .review p{
+            margin-top: 20px;
+            color: #D0D0D0;
+        }
+        .flex{
+            width: 600px;
+            display: flex;
+            gap: 14px;
+        }
+        .square{
+            width: 25px;
+            height: 25px;
+            background-color: #F9F1E7;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 12px;
+        }
+        .circle{
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;      
+        }
+        
+        .quantity{
+            width: 100px;
+            height: 50px;
+            border: 2px  solid #aaa6a6;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        .quantity-left{
+            position: absolute;
+            left: 10px;
+        }
+        .quantity-mid{
+            position: relative;
+            left: 45px;
+        }
+        .quantity-right{
+            position: relative;
+            left: 75px;
+        }
+
+        .add{
+            width: 200px;
+            height: 50px;
+            border: 3px  solid #aaa6a6;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .hr{
+            width: 570px;
+            height: 3px;
+            background-color: #d0cccc;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+        .footer{
+            display: flex;
+            color: #bcbaba;
+            gap: 20px;
+        }
+        .footer-icon{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .row-icon{
+            display: flex;
+        }
+        
+        .facebook{
+            color: black;
+            margin-left: 5px;
+        }
+        .in{
+            color: black;
+            margin-left: 20px;
+        }
+        .twiter{
+            margin-left: 20px;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: #000000;
+            color: rgb(255, 255, 255);
+            font-size: 7px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container-pic">
+            <div class="small-pic">
+                <img src="https://furnibuy.com/wp-content/uploads/2020/07/ghe-sofa-phong-khach-chung-cu-dep-fb20153.jpg">
+                <img src="https://furnibuy.com/wp-content/uploads/2020/07/mau-ghe-sofa-nho-mini-cho-chung-cu-fb20153.jpg">
+                <img src="https://furnibuy.com/wp-content/uploads/2020/07/ghe-sofa-vang-ni-dep-fb-20153.jpg">
+                <img src="https://furnibuy.com/wp-content/uploads/2020/07/ghe-sofa-phong-khach-dep-gia-re-fb20153.jpg">
+            </div>
+
+            <div class="big-pic">
+                <img src="https://furnibuy.com/wp-content/uploads/2020/07/ghe-sofa-vang-ni-hien-dai-fb20153.jpg">
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="content-title">Asgaard sofa</div>
+            <div style="color: #B7B7B7; font-size: 18px; font-weight: bold;">Rs.250,000.00</div>
+            <div class="review">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+                <span class="separator">|</span>
+                <p>5 Customer Review</p>
+            </div>
+            <p style="font-weight: bold;">Setting the bar as one of the loudest speakers in its class, the <br> Kilburn is a compact, stout-hearted hero with a well-balanced <br> audio which boasts a clear midrange and extended highs for a <br> sound.</p>
+
+            <div style="color: #B7B7B7;">Size</div>
+
+            <div class="flex">
+                <div class="square" style="background-color: #B88E2F;">L</div>
+                <div class="square">XL</div>
+                <div class="square">XS</div>
+            </div>
+
+            <div style="color: #B7B7B7;">Color</div>
+            <div class="flex">
+                <div class="circle" style="background-color: #816DFA;"></div>
+                <div class="circle" style="background-color:#000000;"></div>
+                <div class="circle" style="background-color:#B88E2F"></div>
+            </div>
+            
+            <div class="flex">
+                <div class="quantity">
+                    <div class="quantity-left">-</div>
+                    <div class="quantity-mid">1</div>
+                    <div class="quantity-right">+</div>
+                </div>
+
+                <div class="add">Add to Cart</div>
+                <div class="add">+ Compare</div>
+            </div>
+
+            <div class="hr"></div>
+
+            <div class="footer">
+                <div class="footer-icon">
+                    <span>SKU</span>
+                    <span>Category</span>
+                    <span>Tags</span>
+                    <span>Share</span>
+                </div>
+
+                <div class="footer-icon">
+                    <span>: SS001</span>
+                    <span>: Sofas</span>
+                    <span>: Sofa, Chair, Home, Shop</span>
+                    <div class="row-icon">:
+                        <div class="facebook"><i class="fa-brands fa-facebook"></i></div>
+                        <div class="in"><i class="fa-brands fa-invision"></i></div>
+                        <div class="twiter"><i class="fa-brands fa-twitter"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

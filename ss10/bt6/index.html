@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .container-inside{
+            background-color: #c9cacb;
+            width: 800px; 
+            height: 670px;
+            position: relative;
+            border-radius: 5px;
+        }
+        .container-outside{
+            background-color: #e3dede;
+            width: 820px;
+            height: 690px;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .news-card {
+            width: 800px;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .news-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(40%);
+            position: relative;
+        }
+
+        .news-content {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: white;
+            max-width: 80%;
+        }
+
+        .news-category {
+            color: white;
+            padding: 5px 10px;
+            border: 1px solid white;
+            border-radius: 5px;
+            font-size: 12px;
+            display: inline-block;
+            position: absolute;
+            top: 15px;
+            left: 20px;
+        }
+
+        .news-date {
+            font-size: 12px;
+            opacity: 0.8;
+            margin-top: 5px;
+        }
+
+        .news-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        .news-description {
+            font-size: 14px;
+            margin-top: 5px;
+            opacity: 0.9;
+        }
+
+        .pagination {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            gap: 10px;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        .pagination button {
+            background: #ddd;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .pagination button.active {
+            background: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-outside">
+        <div class="container-inside">
+            <div class="news-card">
+                <img src="https://c7.alamy.com/comp/2PRAJD7/two-opposing-players-give-an-handshake-at-the-end-of-the-game-2PRAJD7.jpg" alt="News Image">
+                <div class="news-category">Football</div>
+                <div class="news-content">
+                    <div class="news-date">Agence France-Presse - 04 June 2023</div>
+                    <div class="news-title">LIONEL MESSI LEAVING LIGUE 1 TEAM PARIS SAINT-GERMAIN, CLUB CONFIRMS</div>
+                    <div class="news-description">The EuroLeague Finals Top Scorer is the individual award for the player that gained the highest points in the EuroLeague Finals.</div>
+                </div>
+            </div>
+        
+            <div class="pagination">
+                <button>←</button>
+                <button class="active">1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+                <button class="active">→</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

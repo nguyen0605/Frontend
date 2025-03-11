@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport News</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600&display=swap">
+    <script src="https://kit.fontawesome.com/7b988689d5.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #e0e0e0;
+            padding: 15px 50px;
+        }
+
+        .logo {
+            font-family: 'Great Vibes', cursive;
+            font-size: 36px;
+            font-weight: bold;
+            margin-left: 70px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #4a4a4a;
+            margin: 0 15px;
+            font-weight: 400;
+        }
+
+        .menu a:hover {
+            color: black;
+            font-weight: bold;
+        }
+
+        .search{
+            width: 100px;
+            height: 30px;
+            background-color: #7e848f;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 8px 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        .search:hover {
+            background-color: #6d737d;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Sport News</div>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">Category</a>
+            <a href="#">Trending News</a>
+            <a href="#">Recent News</a>
+            <a href="#">Clubs Ranking</a>
+            <a href="#">Sports Article</a>
+        </div>
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            Search
+        </div>
+    </div>
+</body>
+</html>
