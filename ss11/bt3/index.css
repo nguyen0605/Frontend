@@ -1,0 +1,101 @@
+body
+{
+    margin: 1vh 1vw;
+    position: relative;
+}
+header
+{
+    height: 30vh;
+    background-color: #9D1F6C;
+}
+.flex
+{
+    display: flex;
+    justify-content: space-between;
+}
+.box1 p
+{
+    width: 23vw;
+    height: 15vh;
+    background-color: #D04B8D;
+}
+.box2 p
+{
+    width: 48vw;
+    height: 30vh;
+    background-color: #D679AF;
+}
+footer
+{
+    height: 15vh;
+    background-color: #E79CCC;
+}
+.layer
+{
+    position: absolute; top: 0; bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    margin: 0;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto ;
+    justify-content: space-between;
+}
+.layer p
+{
+    width: 6vw;
+    height: 100%;
+    margin: 0;
+    background-color: #F1D0E2;
+    opacity: 0.3;
+}
+@media screen and (max-width: 1000px)
+{
+    .flex
+    {
+        flex-wrap: wrap;
+    }
+    .box1 p
+    {
+        width: 47vw;
+    }
+    .box2 p
+    {
+        width: 100vw;
+    }
+    .layer
+    {
+        gap: 5.5vw;
+    }
+    .layer p
+    {
+        width: 20vw;
+    }
+    .layer p:nth-child(n+5)
+    {
+        display: none;
+    }
+}
+@media screen and (max-width: 768px)
+{
+    .flex
+    {
+        flex-direction: column;
+    }
+    .box1 p,
+    .box2 p
+    {
+        width: 100vw;
+    }
+    .layer
+    {
+        gap: 5.5vw;
+    }
+    .layer p
+    {
+        width: 48vw;
+    }
+    .layer p:nth-child(n+3)
+    {
+        display: none;
+    }
+}
