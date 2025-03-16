@@ -1,0 +1,212 @@
+body{
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    position: relative;
+    width: 1440px;
+    height: 2000px;
+    background-color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+}
+[src*="Frame"]{
+    position: absolute;
+    top: 29px;
+    left: 54px;
+    bottom: 30px;
+    width: 185px;
+    height: 41px;
+}
+.category{
+    position: absolute;
+    top: 38px;
+    left: 505px;
+    width: 430px;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+.category span{
+    color: #000000;
+    width: 42px;
+    height: 24px;
+    font-weight: 500;
+    font-size: 16px;
+}
+[src]{
+    position: absolute;
+}
+[src*="alert"]{
+    left: 1093px;
+}
+[src*="search"]{
+    left: 1166px;
+}
+[src*="heart"]{
+    left: 1239px;
+}
+[src*="shop"]{
+    left: 1312px;
+}
+
+[src*="alert"],
+[src*="search"],
+[src*="heart"],
+[src*="shop"]{
+    width: 28px;
+    height: 28px;
+    top: 36px;
+}
+[src*="main"]{
+    width: 100%;
+    height: 716.83px;
+    top: 95.7px;
+}
+.title{
+    position: absolute;
+    width: 300px;
+    height: 48px;
+    top: 869px;
+    left: 543px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    color: #333333;
+}
+.text{
+    position: absolute;
+    width: 559px;
+    height: 28.711400985717773px;
+    top: 917px;
+    left: 449px;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+[src*="room"]{
+    width: 381px;
+    height: 480px;
+    top: 1008px;
+}
+[src*="dinner"]{
+    left: 131px;
+}
+[src*="living"]{
+    left: 532px;
+}
+[src*="bed"]{
+    left: 933px;
+}
+.name-pic1,
+.name-pic2,
+.name-pic3{
+    position: absolute;
+    height: 36px;
+    top: 1518px;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    color: #333333;
+}
+.name-pic1{
+    left: 282px;
+    width: 79;
+}
+.name-pic2{
+    left: 687px;
+    width: 71px;
+}
+.name-pic3{
+    left: 1067px;
+    width: 112px;
+}
+[class*="fa"]{
+    display: none;
+}
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* Logo nhỏ lại */
+    [src*="Frame"] {
+        width: 30.71428571428571%;
+        height: auto;
+    }
+
+    /* Ẩn danh mục khi ở mobile */
+    .category {
+        display: none;
+    }
+
+    /* Hiển thị icon menu 3 gạch */
+    [class*="fa"] {
+        display: block;
+        position: absolute;
+        top: 36px;
+        right: 20px;
+        width: 2.083333333333333px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    /* Icons */
+    [src*="alert"],
+    [src*="search"],
+    [src*="heart"],
+    [src*="shop"] {
+        position: static;
+        width: 1.944444444444444%;
+        height: 28px;
+        margin: 10px;
+    }
+
+    /* Tiêu đề + Văn bản */
+    .title {
+        position: static;
+        width: 100%;
+        font-size: 28px;
+        margin-top: 20px;
+    }
+
+    .text {
+        position: static;
+        width: 100%;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    /* Hình ảnh chính */
+    [src*="main"] {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    /* Hình ảnh sản phẩm */
+    [src*="room"],
+    [src*="living"],
+    [src*="bed"] {
+        position: static;
+        width: 80%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    /* Tên sản phẩm */
+    .name-pic1,
+    .name-pic2,
+    .name-pic3 {
+        position: static;
+        width: 100%;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+}
+
