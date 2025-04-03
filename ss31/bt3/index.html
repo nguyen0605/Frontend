@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: fit-content;
+            border: 1px solid black;
+            padding-right: 70px;
+            padding-bottom: 30px;
+            transition: background-color 0.3s;
+        }
+        
+        .square-container{
+            display: flex;
+            gap: 5px;
+        }
+        .square{
+            width: 100px;
+            height: 100px;
+        }
+        [id="green"]{
+            background-color: green;
+        }
+        [id="red"]{
+            background-color: red;
+        }
+        [id="purple"]{
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        change background-color<br><br> 
+        Mouse click<br><br>
+        <div class="square-container">
+            <div class="square" id="green">xanh</div>
+            <div class="square" id="red">đỏ</div>
+            <div class="square" id="purple">tím</div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
