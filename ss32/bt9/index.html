@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Bar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            opacity: 0.1;
+        }
+        .progress-container {
+            width: 80%;
+            background-color: #ddd;
+            border-radius: 10px;
+            margin: 20px auto;
+            height: 30px;
+        }
+        .progress-bar {
+            height: 100%;
+            width: 0;
+            background-color: green;
+            border-radius: 10px;
+            transition: width 0.3s ease-in-out;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>Progress Bar with Background Effect</h2>
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+    <div class="buttons">
+        <button onclick="updateProgress(10)">Tăng tiến trình</button>
+        <button onclick="updateProgress(-10)">Giảm tiến trình</button>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
