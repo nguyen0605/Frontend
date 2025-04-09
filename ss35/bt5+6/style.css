@@ -1,0 +1,237 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.container{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.head h3{
+    font-weight: bold;
+}
+.head button{
+    background-color: #4094F7;
+    color: white;
+    height: fit-content;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3 ease-in-out;
+}
+.head button:hover{
+    background-color: blue;
+}
+
+.interaction{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.interaction select{
+    width: 200px;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 5px;
+    cursor: pointer;
+}
+.search-wrapper {
+    position: relative;
+    width: 230px;
+}
+
+.search-wrapper input {
+    width: 100%;
+    padding: 8px 0px 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+}
+
+.search-wrapper .search-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 14px;
+    pointer-events: none;
+}
+
+th,td{
+    font-weight: normal;
+}
+
+.status {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 500;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 14px;
+}
+
+.status .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.status.active {
+    color: #067a09;
+    background-color: #d3f7d8;
+}
+
+.status.active .dot {
+    background-color: #059e0e;
+}
+
+.status.inactive {
+    color: #c31616;
+    background-color: #fddddd;
+}
+
+.status.inactive .dot {
+    background-color: #ff3c3c;
+}
+
+.action {
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+.trash {
+    color: red;
+    margin-right: 20px;
+    margin-left: 13px;
+    cursor: pointer;
+}
+
+.pen {
+    color: orange;
+    cursor: pointer;
+}
+
+/* Hộp thêm danh mục */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4); /* làm tối */
+    z-index: 5;
+    display: none;
+}
+
+.addContainer {
+    z-index: 10;
+    width: 500px;
+    height: 300px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.nav h6{
+    font-weight: bold   ;
+}
+.nav i{
+    cursor: pointer;
+}
+.col-md-6{
+    width: 100%;
+    font-size: 12px;
+}
+.col-md-6 input{
+    height: 30px;
+    margin-top: -5px;
+}
+.addStatus{
+    margin-top: -1px;
+    display: inline-block;
+    font-size: 12px;
+    border-bottom: 1px solid rgb(201, 200, 200);
+}
+.radio{
+    display: flex;
+}
+.form-check{
+    display: flex;
+    margin-left: -18px;
+    margin-right: 20px;
+}
+.custom-radio {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #007bff;
+    border-radius: 50%;
+    background-color: #fff;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    margin-right: 10px;
+}
+.custom-radio:checked::before {
+    content: "✓";
+    position: absolute;
+    top: -3px;
+    left: 1px;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+}
+.custom-radio:checked {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+.btnAdd{
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    align-items: center;
+    font-size: 12px;
+}
+.cancel{
+    padding: 5px 10px;
+    border: 1px solid rgb(131, 130, 130);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.add{
+    cursor: pointer;
+    padding: 5px 20px;
+    border: none;
+    background-color: #007bff;
+    border-radius: 5px;
+    color: white;
+}
+
+
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .task-container {
+            max-width: 400px;
+            margin: auto;
+            padding: 10px;
+        }
+        .task {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #f3f3f3;
+            padding: 10px;
+            margin: 5px 0;
+        }
+        .btnContainer{
+            display: flex;
+            gap: 5px;
+        }
+        button {
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>To-Do List K24</h2>
+    <input type="text" id="taskInput" placeholder="Nhập công việc">
+    <button onclick="addTask()">Thêm</button>
+    <div class="task-container" id="taskList">
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
