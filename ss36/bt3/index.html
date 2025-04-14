@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chọn màu nền</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+      transition: background-color 0.3s ease;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+
+    .color-btn {
+      padding: 15px 25px;
+      margin: 10px;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .red { background-color: #e74c3c; }
+    .blue { background-color: #3498db; }
+    .yellow { background-color: #f1c40f; color: black; }
+    .purple { background-color: #9b59b6; }
+
+    .note {
+      margin-top: 30px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Chọn màu nền bạn yêu thích</h1>
+
+  <button class="color-btn red" onclick="setColor('red')">Đỏ</button>
+  <button class="color-btn blue" onclick="setColor('blue')">Xanh</button>
+  <button class="color-btn yellow" onclick="setColor('yellow')">Vàng</button>
+  <button class="color-btn purple" onclick="setColor('purple')">Tím</button>
+
+  <p class="note">Trang sẽ ghi nhớ màu bạn đã chọn kể cả khi tải lại!</p>
+
+  <script>
+    function setColor(color) {
+      document.body.style.backgroundColor = color;
+      localStorage.setItem('bgColor', color);
+    }
+
+    window.onload = function() {
+      const savedColor = localStorage.getItem('bgColor');
+      if (savedColor) {
+        document.body.style.backgroundColor = savedColor;
+      }
+    }
+  </script>
+
+</body>
+</html>

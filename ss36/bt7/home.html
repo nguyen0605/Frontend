@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Trang chủ</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2 id="welcome"></h2>
+    <p>Chào mừng bạn đến với hệ thống mini!</p>
+    <button onclick="logout()">Đăng xuất</button>
+  </div>
+
+  <script>
+    // Kiểm tra trạng thái đăng nhập
+    const currentUser = localStorage.getItem("currentUser");
+
+    if (currentUser) {
+      const username = JSON.parse(currentUser);
+      document.getElementById("welcome").innerHTML = `Xin chào, <b>${username}</b>! 👋`;
+    }
+
+    function logout() {
+      localStorage.removeItem("currentUser");
+      window.location.href = "login.html";
+    }
+  </script>
+</body>
+</html>

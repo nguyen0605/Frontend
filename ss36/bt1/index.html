@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhập tên</title>
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-color: #F4F6F8;
+        }
+        .container {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+            padding: 20px 30px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 10px;
+            width: fit-content;
+            text-align: center;
+        }
+        .input-group {
+            width: 360px;
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 15px;
+        }
+        .input-group input {
+            width: 100%;
+            border: 1px solid rgb(186, 183, 183);
+            border-radius: 5px;
+            padding: 8px;
+        }
+        .input-group button, .change-button {
+            padding: 10px 15px;
+            border-radius: 5px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+        }
+        .greeting {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="container">
+    </div>
+
+    <script>
+        const container = document.getElementById("container");
+
+        function renderForm() {
+            container.innerHTML = `
+                <h1>Nhập tên của bạn</h1>
+                <div class="input-group">
+                    <input type="text" id="nameInput">
+                    <button onclick="saveName()">Lưu</button>
+                </div>
+            `;
+        }
+
+        function renderGreeting(name) {
+            container.innerHTML = `
+                <div class="greeting">👋 Chào bạn, <strong>${name}</strong>!</div>
+                <button class="change-button" onclick="changeName()">Đổi tên</button>
+            `;
+        }
+
+        function saveName() {
+            const input = document.getElementById("nameInput").value.trim();
+            if (input === "") {
+                alert("Vui lòng nhập tên!");
+                return;
+            }
+            localStorage.setItem("savedName", input);
+            renderGreeting(input);
+        }
+
+        function changeName() {
+            localStorage.removeItem("savedName");
+            renderForm();
+        }
+
+        const savedName = localStorage.getItem("savedName");
+        if (savedName) {
+            renderGreeting(savedName);
+        } else {
+            renderForm();
+        }
+    </script>
+</body>
+</html>

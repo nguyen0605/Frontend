@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Đăng nhập</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Đăng nhập</h2>
+    <input type="text" id="login-username" placeholder="Tên đăng nhập" />
+    <input type="password" id="login-password" placeholder="Mật khẩu" />
+    
+    <div style="text-align: left; margin-top: 10px;">
+      <label><input type="checkbox" id="remember-me" /> Ghi nhớ tôi</label>
+    </div>
+    
+    <button onclick="login()">Đăng nhập</button>
+
+    <!-- Thông báo lỗi -->
+    <p id="error-message" style="color: red; margin-top: 10px;"></p>
+
+    <a href="register.html">Chưa có tài khoản? Đăng ký</a>
+  </div>
+
+  <script>
+    function login() {
+      const username = document.getElementById("login-username").value.trim();
+      const password = document.getElementById("login-password").value.trim();
+      const rememberMe = document.getElementById("remember-me").checked;
+      const errorMessage = document.getElementById("error-message");
+
+      const users = JSON.parse(localStorage.getItem("users")) || [];
+
+      const user = users.find(u => u.username === username && u.password === password);
+
+      if (user) {
+        if (rememberMe) {
+          localStorage.setItem("currentUser", JSON.stringify(username));
+        } else {
+          sessionStorage.setItem("currentUser", JSON.stringify(username));
+        }
+
+        window.location.href = "home.html";
+      } else {
+        errorMessage.textContent = "Tên đăng nhập hoặc mật khẩu không đúng.";
+      }
+    }
+
+    // Tự động vào home nếu đã đăng nhập
+    const current = localStorage.getItem("currentUser");
+    if (current) {
+      window.location.href = "home.html";
+    }
+  </script>
+</body>
+</html>
